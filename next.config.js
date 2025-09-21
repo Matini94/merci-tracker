@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: "export",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+  basePath: process.env.NODE_ENV === "production" ? "/merci-tracker" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/merci-tracker" : "",
 };
 
 module.exports = nextConfig;
