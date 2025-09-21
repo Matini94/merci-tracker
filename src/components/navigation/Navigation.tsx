@@ -3,14 +3,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { usePWAContext } from "@/components/PWAProvider";
-import {
-  LayoutDashboard,
-  TrendingUp,
-  Database,
-  Plus,
-  Smartphone,
-} from "lucide-react";
+import { LayoutDashboard, TrendingUp, Database, Plus } from "lucide-react";
 
 interface NavItem {
   href: string;
@@ -43,7 +36,6 @@ const navItems: NavItem[] = [
 
 export default function Navigation() {
   const pathname = usePathname();
-  const { isInstallable, installPWA } = usePWAContext();
 
   const isActive = (href: string) => {
     if (href === "/") {
@@ -105,19 +97,6 @@ export default function Navigation() {
           );
         })}
       </div>
-
-      {/* PWA Install Button - More mobile friendly */}
-      {isInstallable && (
-        <button
-          onClick={installPWA}
-          className="group flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/20 border border-blue-200/50 dark:border-blue-800/50 rounded-lg sm:rounded-xl hover:bg-blue-100 dark:hover:bg-blue-900/40 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-lg hover:scale-105 transition-all duration-300 backdrop-blur-sm flex-shrink-0"
-          title="Install Progressive Web App"
-        >
-          <Smartphone className="w-4 h-4 transition-transform duration-300 group-hover:scale-110 flex-shrink-0" />
-          <span className="hidden md:inline">Install App</span>
-          <span className="md:hidden hidden sm:inline">Install</span>
-        </button>
-      )}
     </nav>
   );
 }

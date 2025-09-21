@@ -89,7 +89,7 @@ Generate comprehensive milestone development plan at `docs/milestone-development
 **Milestone 5: Platform & Integration**
 
 - API development for external integrations
-- Mobile app considerations or PWA enhancement
+- Mobile app considerations
 - Third-party service integrations
 - Scalability and performance improvements
 

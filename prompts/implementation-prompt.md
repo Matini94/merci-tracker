@@ -129,7 +129,6 @@ If `docs/milestone-progress.json` does not exist, create it with:
 #### Milestone 5: Platform & Integration
 
 - Develop REST API for external integrations
-- Implement Progressive Web App (PWA) features
 - Add third-party service integrations
 - Build mobile app foundation or enhanced mobile web
 - Implement advanced security features

@@ -1,6 +1,6 @@
 # Merci Tracker
 
-A comprehensive income tracking Progressive Web Application (PWA) built with Next.js 15, React 19, and TypeScript. Track, analyze, and manage your income with powerful analytics and data management tools.
+A comprehensive income tracking application built with Next.js 15, React 19, and TypeScript. Track, analyze, and manage your income with powerful analytics and data management tools.
 
 ## 🚀 Features
 
@@ -35,8 +35,6 @@ A comprehensive income tracking Progressive Web Application (PWA) built with Nex
 
 ### 🛠 Technical Features
 
-- Progressive Web App (PWA) support
-- Offline functionality
 - TypeScript for type safety
 - Comprehensive test coverage
 - Accessibility compliant (WCAG 2.1 AA)
@@ -90,10 +88,6 @@ pnpm dev
 3. **View Dashboard**: Check your income overview and recent entries
 4. **Analytics**: Explore detailed analytics and trends in the Analytics section
 5. **Data Management**: Use import/export tools in the Data Management section
-
-## 📱 PWA Installation
-
-Install Merci Tracker as a PWA on your device:
 
 - **Desktop**: Click the install button in your browser's address bar
 - **Mobile**: Use "Add to Home Screen" from your browser's menu
